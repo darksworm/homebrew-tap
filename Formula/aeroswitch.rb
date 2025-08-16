@@ -1,8 +1,8 @@
 class Aeroswitch < Formula
   desc "Fast and lightweight window switcher for AeroSpace users"
   homepage "https://github.com/darksworm/aeroswitch"
-  url "https://github.com/darksworm/aeroswitch/releases/download/v1.0.0/aeroswitch-1.0.0-macos.tar.gz"
-  sha256 "YOUR_SHA256_HERE" # Will be updated when you create the GitHub release
+  url "https://github.com/darksworm/aeroswitch/releases/download/main/aeroswitch-main-macos.tar.gz"
+  sha256 "cf4ef442de136df6f0a83f74b35a5ec707a933ec8cc9af30999425b64fc50da3" # Will be updated when you create the GitHub release
   license "GPL-3.0"
   head "https://github.com/darksworm/aeroswitch.git", branch: "main"
 
@@ -26,6 +26,6 @@ class Aeroswitch < Formula
   end
 
   test do
-    assert_match "AeroSwitch v1.0.0", shell_output("#{bin}/aeroswitch --version")
+    assert_match "AeroSwitch vmain", shell_output("#{bin}/aeroswitch --version")
   end
 end
