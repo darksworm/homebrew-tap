@@ -6,7 +6,7 @@ This is a [Homebrew](https://brew.sh) tap for [AeroSwitch](https://github.com/da
 
 ```bash
 # Add the tap
-brew tap darksworm/aerospace
+brew tap darksworm/aeroswitch
 
 # Install AeroSwitch
 brew install aeroswitch
