@@ -8,8 +8,6 @@ class Aeroswitch < Formula
 
   depends_on :macos
 
-  plist_options manual: "aeroswitch --background"
-
   def install
     bin.install "aeroswitch"
   end
@@ -42,10 +40,11 @@ class Aeroswitch < Formula
       Get AeroSpace from: https://github.com/nikitabobko/AeroSpace
 
       To start AeroSwitch as a background service:
-        aeroswitch --background
+        brew services start aeroswitch
 
-      To activate the window switcher:
-        aeroswitch --activate
+      To configure the activation keybinding, add this to ~/.aerospace.toml:
+        [mode.main.binding]
+        cmd-tab = 'exec-and-forget #{opt_bin}/aeroswitch --activate'
     EOS
   end
 
