@@ -9,7 +9,7 @@ This is a [Homebrew](https://brew.sh) tap for [AeroSwitch](https://github.com/da
 brew tap darksworm/aeroswitch
 
 # Install AeroSwitch
-brew install aeroswitch
+brew install darksworm/tap/aeroswitch
 ```
 
 ## Usage
