@@ -14,22 +14,28 @@ brew install darksworm/tap/aeroswitch
 
 ## Usage
 
-After installation, configure AeroSwitch in your AeroSpace configuration:
+Start AeroSwitch as a background service that runs automatically on login:
+
+```bash
+# Start the service and enable auto-start on login
+brew services start aeroswitch
+
+# Stop the service
+brew services stop aeroswitch
+
+# Check service status
+brew services list | grep aeroswitch
+```
+
+Then configure the activation keybinding in your AeroSpace configuration:
 
 ```toml
 # ~/.aerospace.toml
-
-# Auto-start AeroSwitch with AeroSpace
-[[on-window-detected]]
-if.app-id = 'com.apple.loginwindow'
-run = '/opt/homebrew/bin/aeroswitch --background'
-
-# Bind Cmd+Tab to open window switcher
 [mode.main.binding]
 cmd-tab = 'exec-and-forget /opt/homebrew/bin/aeroswitch --activate'
 ```
 
-Then restart AeroSpace and press Cmd+Tab to open the window switcher!
+After configuration, restart AeroSpace and press Cmd+Tab to open the window switcher!
 
 ## About
 
