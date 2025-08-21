@@ -6,25 +6,25 @@ class Argonaut < Formula
 
   on_macos do
     on_intel do
-      url "https://github.com/darksworm/argonaut/releases/download/v1.5.1/argonaut-darwin-x64"
-      sha256 "placeholder_darwin_x64_sha256"
+      url "https://github.com/darksworm/argonaut/releases/download/v1.5.3/argonaut-darwin-x64"
+      sha256 "e02db7b1dd03067e97d01927d94c6f0eda7db204c2002774ab8d59456d23c9b8"
     end
     
     on_arm do
-      url "https://github.com/darksworm/argonaut/releases/download/v1.5.1/argonaut-darwin-arm64"
-      sha256 "placeholder_darwin_arm64_sha256"
+      url "https://github.com/darksworm/argonaut/releases/download/v1.5.3/argonaut-darwin-arm64"
+      sha256 "0251e707bdbaa8eadfe1c61c1a180f53ac7deffcc4261ccebadc3c05629964d5"
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/darksworm/argonaut/releases/download/v1.5.1/argonaut-linux-x64"
-      sha256 "placeholder_linux_x64_sha256"
+      url "https://github.com/darksworm/argonaut/releases/download/v1.5.3/argonaut-linux-x64"
+      sha256 "d397a499cf7e3c7b15ef50b871494c258934b34cd229697aa28e9000e6fa42d8"
     end
     
     on_arm do
-      url "https://github.com/darksworm/argonaut/releases/download/v1.5.1/argonaut-linux-arm64"
-      sha256 "placeholder_linux_arm64_sha256"
+      url "https://github.com/darksworm/argonaut/releases/download/v1.5.3/argonaut-linux-arm64"
+      sha256 "fb4795b62a97837a367cae89699fd9d088e042081287327f5df49adba4210747"
     end
   end
 
