@@ -18,49 +18,6 @@ brew install darksworm/homebrew-tap/aeroswitch
 brew install darksworm/homebrew-tap/argonaut
 ```
 
-## Usage
-
-Start AeroSwitch as a background service that runs automatically on login:
-
-```bash
-# Start the service and enable auto-start on login
-brew services start aeroswitch
-
-# Stop the service
-brew services stop aeroswitch
-
-# Check service status
-brew services list | grep aeroswitch
-```
-
-Then configure the activation keybinding in your AeroSpace configuration:
-
-```toml
-# ~/.aerospace.toml
-[mode.main.binding]
-cmd-tab = 'exec-and-forget /opt/homebrew/bin/aeroswitch --activate'
-```
-
-After configuration, restart AeroSpace and press Cmd+Tab to open the window switcher!
-
-### Argonaut Usage
-
-Use Argonaut to manage your ArgoCD applications:
-
-```bash
-# Check version
-argonaut version
-
-# Connect to ArgoCD and list applications
-argonaut apps
-
-# View application details
-argonaut app <app-name>
-
-# Sync an application
-argonaut sync <app-name>
-```
-
 ## About
 
 ### AeroSwitch
