@@ -3,7 +3,7 @@ cask "traefiktop" do
   name "traefiktop"
   desc "A TUI for visualizing Traefik routing"
   homepage "https://github.com/darksworm/traefiktop"
-  version "1.1.0"
+  version "1.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "traefiktop" do
   on_macos do
     on_intel do
       url "https://github.com/darksworm/traefiktop/releases/download/v#{version}/traefiktop-#{version}-darwin-amd64.tar.gz"
-      sha256 "cd78f8f4904426e98560c744834ea9d2ad888aca3630f35b85cba0bb3d0e8307"
+      sha256 "16c94493726136853e58cd46eb513502a4990dd52ea83efc31e3395eb24e044d"
     end
     on_arm do
       url "https://github.com/darksworm/traefiktop/releases/download/v#{version}/traefiktop-#{version}-darwin-arm64.tar.gz"
-      sha256 "a4a1ee8ac5f15ffe1e9ecd2fbc253114b010d1970f1468f2a2f62b0d5fdb21a0"
+      sha256 "b50833607d404821df37e6b02a03152312e25bf6e250a7d6493e9a44695d5892"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/darksworm/traefiktop/releases/download/v#{version}/traefiktop-#{version}-linux-amd64.tar.gz"
-      sha256 "6845ba3bd4e721dcdbcfb03be468b4d0a39f2722181e6d9b4809f351a7ba9466"
+      sha256 "f7d774af84809f167beb10df2d3784f91510e63939061f9ce7cd13bd0bdf5b64"
     end
     on_arm do
       url "https://github.com/darksworm/traefiktop/releases/download/v#{version}/traefiktop-#{version}-linux-arm64.tar.gz"
-      sha256 "187df430e4d5917e079472444905c6de84f85c35328677786ba7cbe12a9ca175"
+      sha256 "11a489549a8c4b33368aefe0d087bf89adf1181c49b1e88c904b7435f88c07cf"
     end
   end
 
