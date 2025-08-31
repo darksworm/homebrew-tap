@@ -3,7 +3,7 @@ cask "argonaut" do
   name "argonaut"
   desc "A GitOps CLI tool for managing ArgoCD applications"
   homepage "https://github.com/darksworm/argonaut"
-  version "1.14.0"
+  version "1.15.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "argonaut" do
   on_macos do
     on_intel do
       url "https://github.com/darksworm/argonaut/releases/download/v#{version}/argonaut-#{version}-darwin-amd64.tar.gz"
-      sha256 "6eb4c8bee6ae9e5d34b1086300e5bd542c74c2841aadf73cff80730b5a02b7dc"
+      sha256 "32c538f561c96ad0549aaf9880c1125c1e37e5cbf652de06569b8972b267111a"
     end
     on_arm do
       url "https://github.com/darksworm/argonaut/releases/download/v#{version}/argonaut-#{version}-darwin-arm64.tar.gz"
-      sha256 "af528924f654584719c939d938d8ab458278646f692da62c9717f17ffb8065a5"
+      sha256 "334dd2340a52c46dbc8c28cc90592a396d2002e3168aa88bc2d9574a5d899295"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/darksworm/argonaut/releases/download/v#{version}/argonaut-#{version}-linux-amd64.tar.gz"
-      sha256 "2df57c7e88299a2884ab6a0e6a57a1f75ce3b4b3cf67ba718eb5b8fd6cc703f6"
+      sha256 "ca204759d6d364e471614529d7e281c904d9fcea889c70b00f503079b8c2e021"
     end
     on_arm do
       url "https://github.com/darksworm/argonaut/releases/download/v#{version}/argonaut-#{version}-linux-arm64.tar.gz"
-      sha256 "f73906999d109f8cc945a889c2e86b501bb95dd26bb781bc00f521bc439e2bc4"
+      sha256 "6cb5f42dbbd3b2d92120964ce7475c5c99fc42fbcab1e7d97d99d94d367c06cd"
     end
   end
 
