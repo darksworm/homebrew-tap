@@ -5,21 +5,21 @@
 class Gitagrip < Formula
   desc "A fast TUI application for discovering, grouping, and inspecting multiple Git repositories"
   homepage "https://github.com/darksworm/gitagrip"
-  version "1.0.6"
+  version "1.1.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/darksworm/gitagrip/releases/download/v1.0.6/gitagrip-1.0.6-darwin-amd64.tar.gz"
-      sha256 "0246cb3a77b1c1cbb086116cc820e00949bac68b00552f7778aadabf92f67295"
+      url "https://github.com/darksworm/gitagrip/releases/download/v1.1.0/gitagrip-1.1.0-darwin-amd64.tar.gz"
+      sha256 "215889868be02c2356e699d4c4a9cbd1c897f8b5045955e404e2ddae14167036"
 
       def install
         bin.install "gitagrip"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/darksworm/gitagrip/releases/download/v1.0.6/gitagrip-1.0.6-darwin-arm64.tar.gz"
-      sha256 "5b9495ce677371656c2d90ab198d622acc97da9cf0845a529be86488dd41a432"
+      url "https://github.com/darksworm/gitagrip/releases/download/v1.1.0/gitagrip-1.1.0-darwin-arm64.tar.gz"
+      sha256 "fb32123ecfd55ad222dd97c6fbb9ae3acc079a3ba45edc0239e43caa8ed2e1a3"
 
       def install
         bin.install "gitagrip"
@@ -29,15 +29,15 @@ class Gitagrip < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darksworm/gitagrip/releases/download/v1.0.6/gitagrip-1.0.6-linux-amd64.tar.gz"
-      sha256 "4ab569000aadf4e3eb5047336a098346ad79905846551bb92c2ada2a56db4616"
+      url "https://github.com/darksworm/gitagrip/releases/download/v1.1.0/gitagrip-1.1.0-linux-amd64.tar.gz"
+      sha256 "6736ab7e7f9a41af62add901558ef4938e3eff710f5195579a9a511b02150d2d"
       def install
         bin.install "gitagrip"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/darksworm/gitagrip/releases/download/v1.0.6/gitagrip-1.0.6-linux-arm64.tar.gz"
-      sha256 "f25722dc1830a75aabe2bbafdee9fa1492a45aa90a6054cbfbdd8d90bb1bfdd6"
+      url "https://github.com/darksworm/gitagrip/releases/download/v1.1.0/gitagrip-1.1.0-linux-arm64.tar.gz"
+      sha256 "f785567eea4e356eb363e7c06d52d246edc0616914ba61d6f02988ac93308b16"
       def install
         bin.install "gitagrip"
       end
